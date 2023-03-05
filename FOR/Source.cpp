@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<Windows.h>
 using namespace std;
 using std::cin;
@@ -8,22 +8,22 @@ using std::endl;
 #define tab "\t"
 
 //#define FOR
-//#define Задание_1
-//#define Задание_2
-//#define Задание_3
-//#define Задание_4
-//#define Задание_5
-//#define Таблица_Умножение
-//#define Таблица_Пифагора
+//#define Р—Р°РґР°РЅРёРµ_1
+//#define Р—Р°РґР°РЅРёРµ_2
+//#define Р—Р°РґР°РЅРёРµ_3
+//#define Р—Р°РґР°РЅРёРµ_4
+//#define Р—Р°РґР°РЅРёРµ_5
+//#define РўР°Р±Р»РёС†Р°_РЈРјРЅРѕР¶РµРЅРёРµ
+//#define РўР°Р±Р»РёС†Р°_РџРёС„Р°РіРѕСЂР°
 
 void main()
 {
 	setlocale(LC_ALL, "");
 	system("COLOR 09");
-#ifdef Задание_1
+#ifdef Р—Р°РґР°РЅРёРµ_1
 	int n;
 	double f = 1;
-	cout << "Введите факториал"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ С„Р°РєС‚РѕСЂРёР°Р»"; cin >> n;
 	for (int i = 1; i <= n; i++)
 	{
 		cout << i << " ! = ";
@@ -31,13 +31,13 @@ void main()
 		cout << f << "\n";
 	}
 	cout << endl;
-#endif // Задание_1
-#ifdef Задание_2;
+#endif // Р—Р°РґР°РЅРёРµ_1
+#ifdef Р—Р°РґР°РЅРёРµ_2;
 	double a;
 	int n;
 	int N = 1;
-	cout << "Введите основание степени:"; cin >> a;
-	cout << "Введите показатель степени:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РѕСЃРЅРѕРІР°РЅРёРµ СЃС‚РµРїРµРЅРё:"; cin >> a;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕРєР°Р·Р°С‚РµР»СЊ СЃС‚РµРїРµРЅРё:"; cin >> n;
 	if (n < 0)
 	{
 		a = 1 / a;
@@ -48,23 +48,23 @@ void main()
 		N *= a;
 	}
 	cout << N << endl;
-#endif // Задание_2;
-#ifdef Задание_3
-	cout << "Таблица - ASCIIсимволов:\n";
+#endif // Р—Р°РґР°РЅРёРµ_2;
+#ifdef Р—Р°РґР°РЅРёРµ_3
+	cout << "РўР°Р±Р»РёС†Р° - ASCIIСЃРёРјРІРѕР»РѕРІ:\n";
 	for (int i = 0; i < 256; i++)
 	{
 		if (i % 16 == 0) cout << endl;
 		cout << (char)i << " ";
 	}
 	cout << endl;
-	cout << "Конец" << endl;
-#endif // Задание_3
-#ifdef Задание_4
+	cout << "РљРѕРЅРµС†" << endl;
+#endif // Р—Р°РґР°РЅРёРµ_3
+#ifdef Р—Р°РґР°РЅРёРµ_4
 	int n;
 	int a = 0;
 	int b = 1;
 	int c = a + b;
-	cout << "Введите количество чисел из ряда Фибоначчи:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡РёСЃРµР» РёР· СЂСЏРґР° Р¤РёР±РѕРЅР°С‡С‡Рё:"; cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cout << a << tab;
@@ -72,10 +72,10 @@ void main()
 		b = c;
 		c = a + b;
 	}
-#endif // Задание_4
-#ifdef Задание_5
+#endif // Р—Р°РґР°РЅРёРµ_4
+#ifdef Р—Р°РґР°РЅРёРµ_5
 	int n;
-	cout << "Введите предельное число:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРµРґРµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ:"; cin >> n;
 	for (int i = 0; i <= n; i++)
 	{
 		bool simple = true;
@@ -91,11 +91,11 @@ void main()
 		if (simple) cout << i << tab;
 	}
 	cout << endl;
-#endif // Задание_5
-#ifdef Таблица_Умножение
+#endif // Р—Р°РґР°РЅРёРµ_5
+#ifdef РўР°Р±Р»РёС†Р°_РЈРјРЅРѕР¶РµРЅРёРµ
 	for (int i = 1; i < 10; i++)
 	{
-		cout << "Таблица умножение" << i << ":\n";
+		cout << "РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёРµ" << i << ":\n";
 		for (int j = 1; j < 10; j++)
 		{
 			cout << "\t\t\t";
@@ -109,8 +109,8 @@ void main()
 		}
 		cout << endl;
 	}
-#endif // Таблица_Умножение
-#ifdef Таблица_Пифагора
+#endif // РўР°Р±Р»РёС†Р°_РЈРјРЅРѕР¶РµРЅРёРµ
+#ifdef РўР°Р±Р»РёС†Р°_РџРёС„Р°РіРѕСЂР°
 	for (int i = 1; i <= 10; i++)
 	{
 		for (int j = 1; j <= 10; j++)
@@ -121,6 +121,6 @@ void main()
 		}
 		cout << endl;
 	}
-#endif // Таблица_Пифагора
+#endif // РўР°Р±Р»РёС†Р°_РџРёС„Р°РіРѕСЂР°
 
 }
